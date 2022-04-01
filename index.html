@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .container{
+            font-size: 30px;
+            background-color: cadetblue;
+            border: 3px solid black;
+            padding: 19px;
+            margin: 9px;
+        }
+        #time{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current time is : <span id="time"></span>
+    </div>
+</body>
+
+<script>
+
+    // Events in JavaScript
+
+    // function clicked(){
+    //     console.log("The Click Button Was Clicked")
+    // }
+    // window.onload = function(){
+    //     console.log("Your Page was loaded")
+    // }
+    // firstContainer.addEventListener('click' , function(){
+    //     console.log("Click hua bhaiya")
+    // })
+    // firstContainer.addEventListener('mouseover' , function(){
+    //     console.log("Mouse over hua")
+    // })
+    // firstContainer.addEventListener('mouseout' , function(){
+    //     console.log("Mouse out hua")
+    // })
+    // firstContainer.addEventListener('keydown' , function(){
+    //     console.log("Key Down hua")
+    // })
+
+
+    // Arrow Function
+
+    // function summ(a,b){
+    //     return a+b;
+    // }
+
+
+    // sum = (a,b)=>{
+    //     return a*b;
+    // }
+
+    // Set TimeOut
+
+    // logKaro = ()=>{
+    //     console.log("Are beta log b krdo ab")
+        
+    // }
+    // clr = setInterval (logKaro , 4000)
+// Use clearInterval/clearTimeout to cancel setInterval/setTimeout..
+
+// Local Storage in Java Script...
+
+// JSON...
+
+// Obj = {name:"harry" , age:21 , a: {this :"that"}}
+// js = JSON.stringify(Obj);
+// console.log(js);
+// parsed = JSON.parse(`{"name":"harry","age":21,"a":{"this":"that"}}`);
+// console.log(parsed);
+
+// Math Functions...
+
+//  a = 20.21;
+// b = 99.8;
+// console.log("The value of rounded of a and b is: ", Math.round(a) , Math.round(b));
+
+// // Pow function
+// console.log("The value of 4 raised to the power 2 is: ",Math.pow(8,2));
+// console.log("The value of 9 raised to the power 2 is: ",Math.pow(9,2));
+// console.log("The value of 7 raised to the power 2 is: ",Math.pow(7,2));
+
+// // Square Root function
+// console.log("The Square root of 729 is : ",Math.sqrt(729));
+// console.log("The Square root of 841 is : ",Math.sqrt(841));
+// console.log("The Square root of 32112 is : ",Math.sqrt(32112));
+// console.log("The Square root of 999999321313123213214213415421521515 is : ",Math.sqrt(999999321313123213214213415421521515));
+
+// // Ceil ..
+// console.log("4.4 rounded to its nearest integer is", Math.ceil(4.4));
+// console.log("4.9 rounded to its nearest integer is", Math.ceil(4.9));
+
+// // Floor ..
+// console.log("4.9 rounded down to its nearest integer is", Math.floor(4.9));
+// console.log("4.1 rounded down to its nearest integer is", Math.floor(4.1));
+
+// // Abs Function ..
+// console.log("Absolute value of 5.99 is " , Math.abs(5.99));
+// console.log("Absolute value of -5.99 is " , Math.abs(-5.99));
+// // Agar koi value negative/minus me hai to ye usay bs Plus me return karta hai..
+
+// // Min and Max functions..
+// console.log("Minumum Value of 12, 23, 3, 31, 21, 21, 21:" , Math.min(12, 23, 3, 31, 21, 21, 21));
+// console.log("Maximum Value of 12, 23, 3, 31, 21, 21, 21:" , Math.max(12, 23, 3, 31, 21, 21, 21));
+
+// // Generating a Random Number..
+// var r = Math.random();
+// // Random number b/w (a,b) = a + (b-a)*Math.random();
+// var a = 10;
+// var b = 15;
+// var r1_100 = a + (b-a)*Math.random();
+// console.log("The random number is", r)
+// console.log("The random number is", r1_100)
+
+// console.log("This is date and Time Tutorial")
+// var ne = new Date(0);
+// console.log(ne);
+
+// // var dt = new Date("2029-9-3");
+// // console.log(dt);
+
+// // var dt = new Date(year, month ,date, hours, minutes, seconds , milliseconds);
+// var dt = new Date(3020, 4 , 5, 6, 12, 45, 121);
+// console.log(dt);
+
+// var yr = dt.getFullYear();
+// console.log("The Year is :", yr);
+
+// var month = dt.getMonth();
+// console.log("The Month is :",month);
+
+// var month = dt.getHours();
+// console.log("The Hours is :", month);
+
+// var sec = dt.getSeconds();
+// console.log("The Seconds is :", sec);
+
+// dt.setDate(8);
+// dt.setMinutes(18);
+// console.log(dt);
+
+// CLOCK..
+setInterval(suar, 1000);
+function suar(){
+    time.innerHTML = new Date();
+}
+
+
+
+
+        // var elem = document.getElementById('click');
+        // // console.log(elem);
+
+        // var elemClass = document.getElementsByClassName('container');
+        // console.log(elemClass);
+        // elemClass[0].style.background = "orange"
+        // elemClass[1].style.background = "yellow"
+        // elemClass[0].classList.add("bg-primary");
+
+        // tn = document.getElementsByTagName('p');
+        // console.log(tn);
+
+        // createdElement = document.createElement('p');
+        // createdElement.innerText = "This is the second paragraph";
+        // tn[0].appendChild(createdElement);
+        // createdElement2 = document.createElement('p');
+        // createdElement.innerText = "This is the third paragraph";
+        // tn[0].replaceChild(createdElement2 , createdElement);
+</script>
+
+</html>

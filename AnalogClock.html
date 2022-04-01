@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <style>
+        #ClockContainer {
+            position: relative;
+            margin: 6px auto;
+            height: 35vw;
+            width: 35vw;
+            background: url('clock.png')no-repeat center center/cover;
+        }
+
+        #hour,
+        #minute,
+        #second {
+            position: absolute;
+            background: black;
+            border-radius: 10px;
+            transform-origin: bottom;
+        }
+
+        #hour {
+            height: 20%;
+            width: 1.7%;
+            top: 197px;
+            left: 335px;
+            opacity: 1;
+
+
+        }
+
+        #minute {
+            height: 25%;
+            width: 1.5%;
+            top: 163px;
+            left: 333px;
+            opacity: 1;
+
+        }
+
+        #second {
+            height: 36%;
+            width: 1.6%;
+            top: 85px;
+            left: 333px;
+            opacity: 1;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ClockContainer">
+        <div id="hour">
+
+        </div>
+        <div id="minute">
+
+        </div>
+        <div id="second">
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+    setInterval(() => {
+        d = new Date();
+        htime = d.getHours();
+        mtime = d.getMinutes();
+        stime = d.getSeconds();
+
+        hrotation = 30 * htime + mtime / 2;
+        mrotataion = 6 * mtime;
+        srotation = 6 * stime;
+
+        hour.style.transform = `rotate(${hrotation}deg)`;
+        minute.style.transform = `rotate(${mrotataion}deg)`;
+        second.style.transform = `rotate(${srotation}deg)`;
+    }, 1000);
+</script>
+
+</html>
